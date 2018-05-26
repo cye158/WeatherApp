@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Weather Forecast App</title>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <div>
+  <div class="container weather-box box-anim">
+    
+    <div class="row">
+      <div class="col-12 weather-info1">
+        <div id="location"></div>
+        <div id="day"></div>
+        <div id="weather"></div>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-7 weather-info2">
+          <img id="weather-icon" alt="Weather Icon">
+          <div class="temp">
+            <div class="temp-now">
+              <span class="data-fade" id="temp-num"></span>
+              <span class="temp-unit">
+                <button id="fahrenheit" disabled>&#176;F</button>
+                <button id="celsius" >&#176;C</button>
+              </span>
+            </div>
+          <div class="temp-range">
+            &#x21E1;
+            <span class="data-fade" id="temp-hi"></span>
+            &#x21E3;
+            <span class="data-fade" id="temp-lo"></span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-5 weather-info3">
+        <div>
+          Precipitation&#58; 
+          <span id="precip"></span>
+        </div>
+        <div>
+          Humidity&#58; 
+          <span id="humidity"></span>
+        </div>
+        <div>
+          Wind&#58; 
+          <span class="data-fade" id="wind"></span>
+        </div>
+      </div>
+    </div>
+      
+    <div class="weather-timestamp">  
+      <br>
+      <small id="update"></small>
+    </div>
+  </div>
+  <footer id="auth" >
+    for fcc by: 
+    <span>CYE</span>
+  </footer>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,160 @@
+body{
+  background: whitesmoke;  
+}
+
+.weather-box{
+  background: #ffff; 
+  padding: 1.25em 1em 1.25em 1em;
+  display: block;
+  position: relative;
+  margin-top: 12.5em;
+  width: 32.5em;
+  border-radius: 2.5px;
+  border: solid 1px lightgrey;
+  color: grey;
+  box-shadow: 0 2px 2.5px rgba(0, 0, 0, .15), 0 2px 2.5px rgba(0, 0, 0, .15);
+}
+
+.temp{
+  float: right;
+  width: 9em;
+}
+
+.temp-now{
+  font-size: 3.25em;
+  font-weight: 400;
+  color: black;
+  text-align: center;
+}
+
+.temp-num{
+  display: inline-block;
+  width: 1.75em;
+}
+
+.temp-unit{ 
+  display: inline-block;
+  padding-top: .225em;
+  width: 1em;
+  float: right;
+}
+
+.temp-range{
+  text-align: left;
+}
+
+.temp-hi, .temp-lo{
+  display: inline-block;
+  width: 2em;
+  margin-right: .5em;
+  margin-left: .25em;
+  text-align: center;
+}
+
+button{
+  border: none;
+  background-color: transparent;
+  border-radius: 2em;
+  font-size: .375em;
+  padding: none;
+  margine: none;
+}
+
+button:enabled{
+  cursor: pointer !important;
+  pointer-events: auto;
+  color: lightgrey;
+}
+
+button:disabled{
+  pointer-events: none;
+  color: inherit;
+  font-weight: 600;
+}
+
+.weather-info1{
+  margin-left: .80em;
+}
+
+.weather-info2{
+  padding-right: .75em;
+}
+
+.weather-info3{
+  padding-top: .75em;
+  float: right;
+}
+
+#location{
+  font-size: 2em;
+  font-weight: 400;
+}
+
+#day,#weather{
+  font-size: .95em;
+}
+
+#weather-icon{
+  display: block;
+  float: left;
+  height: 5em;
+  width: 5em;
+  margin: 1.5em 1em 1.5em 1.5em;
+}
+
+#fahrenheit, #celsius{
+  display: block;
+}
+
+#auth{
+  position: fixed;
+  color: gainsboro;
+  bottom: 1em;
+  left: 1em;
+  font-size: .8em;
+  margin: .25em;
+  padding: .25em .75em .25em .75em;
+  border: solid 2px #9699cc;
+  border-radius: 3px;
+  background: #9699cc;
+  box-shadow: 0 2px 2.5px rgba(0, 0, 0, ..2), 0 2px 2.5px rgba(0, 0, 0, .2);
+}
+
+#auth > span{
+  font-weight: 500;
+}
+
+.box-anim{
+  opacity: 0;
+  animation-name: inout;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+  animation-duration: .75s;
+  animation-timing-function: ease;
+}
+
+@keyframes inout{  
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  30% {
+    transform: scale(0.30);
+    opacity: .15;
+  }
+  40% {
+    transform: scale(.65);
+    opacity: 0.5;
+  }
+  60% {
+    transform: scale(1.15);
+  }
+  80% {
+    transform: scale(.85);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+ 
